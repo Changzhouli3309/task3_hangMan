@@ -2,6 +2,7 @@ package main;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class HangMan {
 
@@ -57,7 +58,7 @@ public class HangMan {
 			if (!guessedPool.contains(c) && !isGuessed) {
 				// add wrong guess to the guessed pool
 				guessedPool.add(c);
-				guessedPool.sort(null);
+				Collections.sort(guessedPool);
 			}
 			guessTimes++;
 		}
